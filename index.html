@@ -38,16 +38,22 @@
             padding: 20px;
             margin: 20px;
         }
+	
+	h1 {
+    		color: #333; /* Text color */
+    		font-size: 36px; /* Font size */
+	}	
 
-        h1, h2 {
+        h2 {
             color: #333;
         }
 
         /* Styling for the profile picture */
         .profile-pic {
             width: 150px;
-            height: 150px;
-            border-radius: 50%;
+            height: auto; /* Maintain aspect ratio */
+            float: right; /* Align the image to the right */
+            margin-left: 20px; /* Add some space between text and image */
         }
 
         /* Footer */
@@ -89,18 +95,20 @@
     <!-- Home Section -->
     <section id="home">
         <h1>Welcome to Keyu Wang's Homepage</h1>
-        <p>This is my personal website where you can learn more about my work and research.</p>
+        <p> I am now a postdoc of mathematics at University of Vienna. </p>
         <img src="your-photo.jpg" alt="Profile Picture" class="profile-pic">
         <!-- Add your own image link above -->
     </section>
 
     <!-- Research Section -->
     <section id="research">
-        <h2>About Me</h2>
-        <p>Hello! I am Keyu Wang, a mathematician specializing in the representation theory of quantum groups and their applications in mathematical physics. 
-           I have completed my doctoral studies at [Your University] and continue my research in [Your Field].
-           <!-- Add more details about yourself here -->
-        </p>
+        <h2>Research</h2>
+        <ul>
+            <li><a href="your-article-link-1">Article 1: Title of the first research paper</a> - Journal Name, Year</li>
+            <li><a href="your-article-link-2">Article 2: Title of the second research paper</a> - Journal Name, Year</li>
+            <li><a href="your-article-link-3">Article 3: Title of the third research paper</a> - Journal Name, Year</li>
+            <!-- Add more articles as necessary -->
+        </ul>
     </section>
 
     <!-- Teaching Section -->
