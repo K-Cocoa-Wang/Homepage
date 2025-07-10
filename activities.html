@@ -85,34 +85,25 @@
             color: #555;
         }
 
-	ul.interactive-list {
-
-
-            list-style-type: none;
-
-
-        }
-
-
-        ul.interactive-list li {
-
-
-            cursor: pointer;
-
-
-        }
-
-
-        ul.interactive-list ul {
-
-
-            display: none;
-
-
-        }
     </style>
 
 </head>
+
+<script>
+  const toggleTitle = document.getElementById('toggle-past-conferences');
+  const pastList = document.getElementById('past-conferences-list');
+
+  toggleTitle.addEventListener('click', function() {
+    if (pastList.style.display === 'none') {
+      pastList.style.display = 'block';
+      toggleTitle.innerHTML = 'Past conferences &#x25B2;'; // Up arrow
+    } else {
+      pastList.style.display = 'none';
+      toggleTitle.innerHTML = 'Past conferences &#x25BC;'; // Down arrow
+    }
+  });
+</script>
+
 <body>
 
     <!-- Navigation Menu -->
@@ -141,8 +132,8 @@
 		<li>06/02/2023 Paris Algebra Seminar at IHP Paris
         </ul>
 
-        <h2><li onclick="toggleList(this)"> Past conferences </h2>
-        <ul>
+        <h2 id="toggle-past-conferences" style="cursor: pointer;">Past conferences &#x25BC;</h2>
+	<ul id="past-conferences-list" style="display: none;">
 		<li>10/2024 <a href="https://smfi.unipr.it/reptheory2024/">Workshop on Representation Theory and Mathematical Physics</a>, UNIPR, Parma
 		<li>09/2024 <a href="https://indico.cern.ch/event/1244170/">Workshop Quantization in Representation Theory, Derived Algebraic Geometry, and Gauge Theory</a>, SRS, Les Diablerets
 		<li>06/2024 <a href="https://sites.google.com/view/artig4/artig-4/">Conference Algebras and representation theory in Germany 4</a>, RWTH Aachen
@@ -154,7 +145,6 @@
 		<li>01/2020 <a href="https://www.ihp.fr/en/news-research-activities/t1-2020-representation-theory">Workshop Geometry and representation theory</a>, IHP, Paris
 		<li>01/2020 <a href="https://conferences.cirm-math.fr/2134.html">Winter school Categorifications, moduli spaces and representation theory</a>, CIRM, Luminy
 	</ul>
-	</li>
 
 	
     </section>
