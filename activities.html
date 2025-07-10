@@ -85,6 +85,17 @@
             color: #555;
         }
 
+.toggle-title {
+  cursor: pointer;
+  color: #0077cc; /* any highlight color you like */
+  transition: color 0.2s;
+}
+
+.toggle-title:hover {
+  color: #005999; /* darker shade on hover */
+  text-decoration: underline; /* optional, makes it obvious */
+}
+
     </style>
 
 </head>
@@ -117,7 +128,7 @@
 		<li>06/02/2023 Paris Algebra Seminar at IHP Paris
         </ul>
 
-        <h2 id="toggle-past-conferences" style="cursor: pointer;">Past conferences &#x25BC;</h2>
+        <h2 id="toggle-past-conferences" style="cursor: pointer;">Past conferences</h2>
 	<ul id="past-conferences-list" style="display: none;">
 		<li>10/2024 <a href="https://smfi.unipr.it/reptheory2024/">Workshop on Representation Theory and Mathematical Physics</a>, UNIPR, Parma
 		<li>09/2024 <a href="https://indico.cern.ch/event/1244170/">Workshop Quantization in Representation Theory, Derived Algebraic Geometry, and Gauge Theory</a>, SRS, Les Diablerets
@@ -141,10 +152,8 @@
   toggleTitle.addEventListener('click', function() {
     if (pastList.style.display === 'none') {
       pastList.style.display = 'block';
-      toggleTitle.innerHTML = 'Past conferences &#x25B2;'; // Up arrow
     } else {
       pastList.style.display = 'none';
-      toggleTitle.innerHTML = 'Past conferences &#x25BC;'; // Down arrow
     }
   });
 </script>
