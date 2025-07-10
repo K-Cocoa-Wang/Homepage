@@ -89,21 +89,6 @@
 
 </head>
 
-<script>
-  const toggleTitle = document.getElementById('toggle-past-conferences');
-  const pastList = document.getElementById('past-conferences-list');
-
-  toggleTitle.addEventListener('click', function() {
-    if (pastList.style.display === 'none') {
-      pastList.style.display = 'block';
-      toggleTitle.innerHTML = 'Past conferences &#x25B2;'; // Up arrow
-    } else {
-      pastList.style.display = 'none';
-      toggleTitle.innerHTML = 'Past conferences &#x25BC;'; // Down arrow
-    }
-  });
-</script>
-
 <body>
 
     <!-- Navigation Menu -->
@@ -149,5 +134,21 @@
 	
     </section>
 
+<script>
+  const toggleTitle = document.getElementById('toggle-past-conferences');
+  const pastList = document.getElementById('past-conferences-list');
+
+  toggleTitle.addEventListener('click', function() {
+    if (pastList.style.display === 'none') {
+      pastList.style.display = 'block';
+      toggleTitle.innerHTML = 'Past conferences &#x25B2;'; // Up arrow
+    } else {
+      pastList.style.display = 'none';
+      toggleTitle.innerHTML = 'Past conferences &#x25BC;'; // Down arrow
+    }
+  });
+</script>
+	
+	
 </body>
 </html>
