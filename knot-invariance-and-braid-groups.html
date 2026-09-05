@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knot Invariance and Braid Groups – Keyu Wang</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Reset & Base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Navigation */
+    nav {
+      background: #005999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-weight: 700;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #0077cc;
+      border-radius: 4px;
+    }
+    /* Hero Section */
+    header {
+      background: #fff;
+      margin: 20px 0;
+      padding: 40px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #005999;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+    /* Profile Image */
+    .profile-pic {
+      display: block;
+      max-width: 200px;
+      width: 100%;
+      margin: 20px auto;
+      border-radius: 50%;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    /* Sections */
+    section {
+      background: #fff;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #0077cc;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: disc inside;
+      margin-bottom: 1em;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    /* Weekly reading list */
+    .weekly-list { list-style: none; padding: 0; }
+    .weekly-list > li { padding: 20px 0; border-bottom: 1px solid #e0e0e0; }
+    .weekly-list > li:last-child { border-bottom: 0; }
+    .weekly-list h3 { color: #005999; margin-bottom: 12px; }
+    .weekly-list dt { font-weight: 700; }
+    .weekly-list dd { min-height: 1.6em; margin-bottom: 12px; }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #005999;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="activities.html">Activities</a>
+    </div>
+  </nav>
+  <div class="container">
+    <section aria-labelledby="course-title">
+      <h1 id="course-title" style="color: #005999; font-size: 2rem; margin-bottom: 15px;">Knot Invariance and Braid Groups</h1>
+      <h2>Weekly reading plan</h2>
+      <p>Readings and learning objectives for each week.</p>
+      <!-- Add or remove week entries as needed. Fill in the blank dd elements below. -->
+      <ol class="weekly-list">
+        <li>
+          <h3>Week 1</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 1 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 1 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 2</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 2 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 2 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 3</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 3 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 3 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 4</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 4 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 4 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 5</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 5 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 5 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 6</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 6 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 6 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 7</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 7 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 7 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 8</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 8 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 8 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 9</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 9 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 9 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 10</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 10 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 10 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 11</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 11 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 11 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 12</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 12 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 12 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 13</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 13 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 13 here. --></dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Week 14</h3>
+          <dl>
+            <dt>Reading</dt>
+            <dd><!-- Add the reading for week 14 here. --></dd>
+            <dt>What you should understand</dt>
+            <dd><!-- Add the learning objectives for week 14 here. --></dd>
+          </dl>
+        </li>
+      </ol>
+      <p style="margin-top: 20px;"><a href="teaching.html">Back to Teaching</a></p>
+    </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Keyu Wang. All rights reserved.</p>
+    </footer>
+</body>
+</html>
