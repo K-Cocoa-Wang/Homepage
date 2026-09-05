@@ -93,10 +93,14 @@
     }
     /* Weekly reading list */
     .weekly-list { list-style: none; padding: 0; }
-    .weekly-list > li { padding: 20px 0; border-bottom: 1px solid #e0e0e0; }
+    .weekly-list > li { padding: 0; border-bottom: 1px solid #e0e0e0; }
     .weekly-list > li:last-child { border-bottom: 0; }
-    .weekly-list h3 { color: #005999; margin-bottom: 12px; }
+    .weekly-list summary { color: #005999; font-size: 1.17em; font-weight: 700; padding: 20px 0; cursor: pointer; }
+    .weekly-list summary:hover { color: #0077cc; }
+    .weekly-list summary:focus-visible { outline: 2px solid #0077cc; outline-offset: 3px; }
+    .weekly-list dl { padding-bottom: 8px; }
     .weekly-list dt { font-weight: 700; }
+    .weekly-list dd ul { list-style: disc outside; padding-left: 24px; margin: 8px 0 16px; }
     .weekly-list dd { min-height: 1.6em; margin-bottom: 12px; }
     /* Footer */
     footer {
@@ -122,134 +126,303 @@
     <section aria-labelledby="course-title">
       <h1 id="course-title" style="color: #005999; font-size: 2rem; margin-bottom: 15px;">Knot Invariance and Braid Groups</h1>
       <h2>Weekly reading plan</h2>
-      <p>Readings and learning objectives for each week.</p>
-      <!-- Add or remove week entries as needed. Fill in the blank dd elements below. -->
+      <!-- Add or remove week entries as needed. Add li elements inside each References and Goal list below. -->
       <ol class="weekly-list">
         <li>
-          <h3>Week 1</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 1 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 1 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 1</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <li>Adams, The Knot Book, Section 1.1 - 1.4</li>
+                  <li>Lickorish, An Introduction to Knot Theory, Chapter 1,</li>
+                  <li>Kassel--Turaev, Braid Groups, Section 2.1.2,</li>
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <li>Definition of knots, links, diagrams. What is the relationship between links and diagrams? &rarr; Reidemeister moves</li>
+                  <li>Basic examples of links and some basic link invariance &rarr; linking number</li>
+                  <li>for the Reidemeister theorem.</li>
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 2</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 2 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 2 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 2</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 2 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 2 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 3</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 3 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 3 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 3</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 3 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 3 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 4</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 4 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 4 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 4</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 4 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 4 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 5</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 5 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 5 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 5</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 5 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 5 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 6</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 6 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 6 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 6</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 6 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 6 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 7</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 7 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 7 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 7</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 7 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 7 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 8</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 8 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 8 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 8</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 8 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 8 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 9</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 9 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 9 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 9</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 9 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 9 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 10</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 10 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 10 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 10</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 10 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 10 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 11</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 11 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 11 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 11</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 11 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 11 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 12</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 12 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 12 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 12</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 12 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 12 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 13</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 13 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 13 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 13</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 13 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 13 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
         <li>
-          <h3>Week 14</h3>
-          <dl>
-            <dt>Reading</dt>
-            <dd><!-- Add the reading for week 14 here. --></dd>
-            <dt>What you should understand</dt>
-            <dd><!-- Add the learning objectives for week 14 here. --></dd>
-          </dl>
+          <details>
+            <summary>Week 14</summary>
+            <dl>
+              <dt>References</dt>
+              <dd>
+                <ul>
+                  <!-- Add references for week 14 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+              <dt>Goal</dt>
+              <dd>
+                <ul>
+                  <!-- Add the goal for week 14 here. -->
+                  <!-- <li></li> -->
+                </ul>
+              </dd>
+            </dl>
+          </details>
         </li>
       </ol>
       <p style="margin-top: 20px;"><a href="teaching.html">Back to Teaching</a></p>
